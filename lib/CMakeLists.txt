@@ -11,7 +11,7 @@
 # of the LICENSE file.
 ############################################################################
 
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.21.3)
 
 project(libcserialport)
 
@@ -37,6 +37,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
 add_library( ${PROJECT_NAME} ${CSerialPortSourceFiles})
+
 target_include_directories(${PROJECT_NAME} PUBLIC ${CSerialPortRootPath}/include)
 if(MSVC)
 # msvc clang-tidy
