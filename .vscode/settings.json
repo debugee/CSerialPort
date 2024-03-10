@@ -1,0 +1,6 @@
+{
+    "cmake.debugConfig": {
+        "externalConsole": true,
+        "console":"newExternalWindow"
+    }
+}
